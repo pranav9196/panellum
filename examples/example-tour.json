@@ -1,0 +1,53 @@
+﻿{
+    "default": {
+        "author": "Matthew Petroff",
+        "firstScene": "pond",
+        "autoLoad": true,
+        "sceneFadeDuration": 2000
+    },
+    
+    "scenes": {
+        "pondCube": {
+            "title": "Jordan Pond (Cube)",
+            "panorama":"conference.jpg",
+
+            "hotSpots": [
+                {
+                    "pitch": -12,
+                    "yaw": -50,
+                    "type": "info",
+                    "text": "we won :p"
+                },
+                {
+                    "pitch": -10,
+                    "yaw": -50,
+                    "type": "info",
+                    "text": "This is a link.",
+                    "URL": "yo"
+                },
+                {
+                    "pitch": 0,
+                    "yaw": -60,
+                    "type": "scene",
+                    "text": "lobby",
+                    "sceneId": "pond"
+                }
+            ]
+        },
+
+        "pond": {
+            "title": "SOFTWARE INCUBATOR",
+            "panorama": "./lab.jpg",
+           "yaw":70,
+            "hotSpots": [
+                {
+                    "pitch": 0,
+                    "yaw": 127,
+                    "type": "scene",
+                    "text": "Conference room :P",
+                    "sceneId": "pondCube"
+                }
+            ]
+        }
+    }
+}
